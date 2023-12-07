@@ -33,12 +33,12 @@ public class PersonResource {
         return Person.listAll();
     }
 
-    @GET
-    @Path("/eyes/{color}")
-    @Produces(MediaType.APPLICATION_JSON)
-    public List<Person> findByColor(@PathParam(value = "color") EyeColor color) {
-        return Person.findByColor(color);
-    }
+    // @GET
+    // @Path("/eyes/{color}")
+    // @Produces(MediaType.APPLICATION_JSON)
+    // public List<Person> findByColor(@PathParam(value = "color") EyeColor color) {
+    //     return Person.findByColor(color);
+    // }
 
     @GET
     @Path("/birth/before/{year}")
